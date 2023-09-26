@@ -1,0 +1,48 @@
+1. **Relationship between def statements and lambda expressions:**
+   - `def` statements are used to define regular named functions in Python, while lambda expressions are used to create anonymous functions (functions without a name).
+   - `def` functions can have multiple statements and a docstring, making them more suitable for complex logic and readability.
+   - Lambda expressions are typically used for simple, one-liner functions and are often used as arguments in higher-order functions like `map`, `filter`, and `sorted`.
+
+2. **Benefits of lambda:**
+   - Conciseness: Lambdas allow you to define functions in a more compact form, which can make code more readable when used appropriately.
+   - Simplicity: They are well-suited for short, single-use functions, reducing the need for defining separate named functions.
+   - Readability: In some cases, lambdas can make code more readable by defining the function right where it's used, eliminating the need to scroll through the code to find a separate function definition.
+
+3. **Comparison of map, filter, and reduce:**
+   - `map`: Applies a given function to each item in an iterable and returns a new iterable containing the results.
+   - `filter`: Filters an iterable based on a given function, returning only the elements that satisfy a certain condition.
+   - `reduce`: Applies a given function cumulatively to the items of an iterable, reducing it to a single value.
+
+4. **Function annotations:**
+   - Function annotations are a way to attach metadata to the parameters and return value of a function.
+   - They do not affect the function's behavior but provide information about the intended types or meanings of the function's arguments and return value.
+   - Annotations are specified using colons (`:`) after the parameter or return value followed by the annotation type.
+   - They can be accessed using the `__annotations__` attribute or third-party libraries for type checking and documentation generation.
+
+5. **Recursive functions:**
+   - Recursive functions are functions that call themselves in their own definition.
+   - They are often used to solve problems that can be broken down into smaller, similar subproblems.
+   - To avoid infinite recursion, recursive functions include a base case that specifies when the recursion should stop.
+   - Examples include calculating factorials, Fibonacci numbers, and traversing tree structures.
+
+6. **General design guidelines for coding functions:**
+   - Use descriptive function names that convey their purpose.
+   - Keep functions short and focused on a single task (the single responsibility principle).
+   - Minimize side effects and avoid modifying global variables.
+   - Document functions using docstrings to explain their purpose, parameters, and return values.
+   - Follow naming conventions (e.g., snake_case for function names in Python).
+   - Use function parameters effectively to make functions more flexible and reusable.
+   - Test functions thoroughly to ensure they behave as expected.
+   - Avoid deep nesting and excessive indentation within functions for better readability.
+
+7. **Ways functions can communicate results to a caller:**
+   - **Return Values:** Functions can return one or more values using the `return` statement.
+   - **Global Variables:** Functions can modify or access global variables to communicate data.
+   - **Print Statements:** Functions can use `print` statements to display information.
+   - **Exception Handling:** Functions can raise exceptions to indicate errors or exceptional conditions.
+   - **Output Parameters:** Functions can modify mutable objects (e.g., lists or dictionaries) passed as arguments to return results.
+   - **Callbacks and Callback Functions:** Functions can accept callback functions as arguments to allow the caller to specify behavior.
+   - **Using Return Codes or Flags:** Functions can return specific codes or boolean flags to indicate success, failure, or other conditions.
+   - **File I/O:** Functions can read from or write to files to communicate data.
+   - **Networking or API Calls:** Functions can communicate with external services or APIs to exchange data.
+   - **Logging:** Functions can use logging mechanisms to record events and data.
